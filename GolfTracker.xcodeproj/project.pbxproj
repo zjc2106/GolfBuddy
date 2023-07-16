@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		755796C1289DEF03005EB659 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796C0289DEF03005EB659 /* Variables.swift */; };
-		755796C328A1B0DD005EB659 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796C228A1B0DD005EB659 /* ThirdViewController.swift */; };
-		755796C528A2FD21005EB659 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796C428A2FD21005EB659 /* FourthViewController.swift */; };
+		755796C328A1B0DD005EB659 /* startRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796C228A1B0DD005EB659 /* startRound.swift */; };
+		755796C528A2FD21005EB659 /* roundStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796C428A2FD21005EB659 /* roundStats.swift */; };
 		755796C828A49716005EB659 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 755796C728A49716005EB659 /* Realm */; };
 		755796CA28A49716005EB659 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 755796C928A49716005EB659 /* RealmSwift */; };
 		755796CC28A49DD3005EB659 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755796CB28A49DD3005EB659 /* Round.swift */; };
 		75AA00442896FAEC00DE9E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00432896FAEC00DE9E6A /* AppDelegate.swift */; };
 		75AA00462896FAEC00DE9E6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00452896FAEC00DE9E6A /* SceneDelegate.swift */; };
-		75AA00482896FAEC00DE9E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00472896FAEC00DE9E6A /* ViewController.swift */; };
+		75AA00482896FAEC00DE9E6A /* landingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00472896FAEC00DE9E6A /* landingPage.swift */; };
 		75AA004B2896FAEC00DE9E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA00492896FAEC00DE9E6A /* Main.storyboard */; };
 		75AA004D2896FAEE00DE9E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AA004C2896FAEE00DE9E6A /* Assets.xcassets */; };
 		75AA00502896FAEE00DE9E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA004E2896FAEE00DE9E6A /* LaunchScreen.storyboard */; };
 		75AA005B2896FAEF00DE9E6A /* GolfTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA005A2896FAEF00DE9E6A /* GolfTrackerTests.swift */; };
 		75AA00652896FAEF00DE9E6A /* GolfTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */; };
-		75AA00AC2898BA8500DE9E6A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00AB2898BA8500DE9E6A /* SecondViewController.swift */; };
-		75BF61D928B1B11D003F4BC0 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BF61D828B1B11D003F4BC0 /* FifthViewController.swift */; };
+		75AA00AC2898BA8500DE9E6A /* holeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00AB2898BA8500DE9E6A /* holeView.swift */; };
+		75BF61D928B1B11D003F4BC0 /* roundDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,13 @@
 
 /* Begin PBXFileReference section */
 		755796C0289DEF03005EB659 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
-		755796C228A1B0DD005EB659 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		755796C428A2FD21005EB659 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		755796C228A1B0DD005EB659 /* startRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startRound.swift; sourceTree = "<group>"; };
+		755796C428A2FD21005EB659 /* roundStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundStats.swift; sourceTree = "<group>"; };
 		755796CB28A49DD3005EB659 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		75AA00402896FAEC00DE9E6A /* GolfTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AA00432896FAEC00DE9E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75AA00452896FAEC00DE9E6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		75AA00472896FAEC00DE9E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75AA00472896FAEC00DE9E6A /* landingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPage.swift; sourceTree = "<group>"; };
 		75AA004A2896FAEC00DE9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75AA004C2896FAEE00DE9E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75AA004F2896FAEE00DE9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		75AA005A2896FAEF00DE9E6A /* GolfTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackerTests.swift; sourceTree = "<group>"; };
 		75AA00602896FAEF00DE9E6A /* GolfTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackerUITests.swift; sourceTree = "<group>"; };
-		75AA00AB2898BA8500DE9E6A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		75BF61D828B1B11D003F4BC0 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		75AA00AB2898BA8500DE9E6A /* holeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holeView.swift; sourceTree = "<group>"; };
+		75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,19 +113,19 @@
 		75AA00422896FAEC00DE9E6A /* GolfTracker */ = {
 			isa = PBXGroup;
 			children = (
-				75AA00AB2898BA8500DE9E6A /* SecondViewController.swift */,
+				75AA00AB2898BA8500DE9E6A /* holeView.swift */,
 				75AA00432896FAEC00DE9E6A /* AppDelegate.swift */,
 				75AA00452896FAEC00DE9E6A /* SceneDelegate.swift */,
-				75AA00472896FAEC00DE9E6A /* ViewController.swift */,
+				75AA00472896FAEC00DE9E6A /* landingPage.swift */,
 				75AA00492896FAEC00DE9E6A /* Main.storyboard */,
 				75AA004C2896FAEE00DE9E6A /* Assets.xcassets */,
 				75AA004E2896FAEE00DE9E6A /* LaunchScreen.storyboard */,
 				75AA00512896FAEE00DE9E6A /* Info.plist */,
 				755796C0289DEF03005EB659 /* Variables.swift */,
-				755796C228A1B0DD005EB659 /* ThirdViewController.swift */,
-				755796C428A2FD21005EB659 /* FourthViewController.swift */,
+				755796C228A1B0DD005EB659 /* startRound.swift */,
+				755796C428A2FD21005EB659 /* roundStats.swift */,
 				755796CB28A49DD3005EB659 /* Round.swift */,
-				75BF61D828B1B11D003F4BC0 /* FifthViewController.swift */,
+				75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */,
 			);
 			path = GolfTracker;
 			sourceTree = "<group>";
@@ -284,13 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75BF61D928B1B11D003F4BC0 /* FifthViewController.swift in Sources */,
-				75AA00AC2898BA8500DE9E6A /* SecondViewController.swift in Sources */,
-				75AA00482896FAEC00DE9E6A /* ViewController.swift in Sources */,
+				75BF61D928B1B11D003F4BC0 /* roundDatabase.swift in Sources */,
+				75AA00AC2898BA8500DE9E6A /* holeView.swift in Sources */,
+				75AA00482896FAEC00DE9E6A /* landingPage.swift in Sources */,
 				75AA00442896FAEC00DE9E6A /* AppDelegate.swift in Sources */,
-				755796C528A2FD21005EB659 /* FourthViewController.swift in Sources */,
+				755796C528A2FD21005EB659 /* roundStats.swift in Sources */,
 				75AA00462896FAEC00DE9E6A /* SceneDelegate.swift in Sources */,
-				755796C328A1B0DD005EB659 /* ThirdViewController.swift in Sources */,
+				755796C328A1B0DD005EB659 /* startRound.swift in Sources */,
 				755796CC28A49DD3005EB659 /* Round.swift in Sources */,
 				755796C1289DEF03005EB659 /* Variables.swift in Sources */,
 			);

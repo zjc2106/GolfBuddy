@@ -49,10 +49,11 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let roundList = realm.objects(Round.self)
         let cell = UITableViewCell()
-        let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
+        let label = UILabel(frame: CGRect(x:0, y:0, width:400, height:50))
         let testRoundName = roundList[roundCount].roundName ?? "<no-name>"
         let testDate = roundList[roundCount].date
         
+        label.numberOfLines = 0
         if testDate != nil{
             label.text = "Round at \(testRoundName) on \(testDate!)"
         }
@@ -61,6 +62,7 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         cell.addSubview(label)
         roundCount = roundCount+1
+        
         return cell
     }
 
