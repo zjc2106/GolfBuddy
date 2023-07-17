@@ -20,7 +20,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBOutlet weak var fairwayLabel: UILabel!
     
-    @IBOutlet weak var par3Switch: UISwitch!
+//    @IBOutlet weak var par3Switch: UISwitch!
     
     @IBOutlet weak var fairwaySwitch: UISwitch!
     
@@ -34,6 +34,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBOutlet weak var nextHoleButton: UIButton!
     
+    @IBOutlet weak var parSwitch: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         holeLabel.text = "Hole \(Variables.hole)"
@@ -58,6 +59,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBAction func nextHole(_ sender: Any) {
         var holeScore = 0.0
+        let holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
         if(fairwaySwitch.isEnabled) {
             if(fairwaySwitch.isOn) {
                 Variables.fairwaysHit = Variables.fairwaysHit + 1
@@ -83,13 +85,13 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         Variables.strokes = Variables.strokes + holeScore
         
         Variables.hole = Variables.hole + 1
-        
+        Variables.par = Variables.par + holePar
         holeLabel.text = "Hole \(Variables.hole)"
         if(Variables.hole == Variables.totalHoles) {
             finishRoundButton.isHidden = false
             nextHoleButton.isHidden = true
         }
-        par3Switch.isOn = false
+//        par3Switch.isOn = false
         fairwaySwitch.isOn = false
         fairwaySwitch.isEnabled = true
         if(self.traitCollection.userInterfaceStyle == .dark) {
@@ -100,12 +102,13 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         }
         girSwitch.isOn = false
         puttSwitch.selectedSegmentIndex = 0
-
+        parSwitch.selectedSegmentIndex = 0
         
     }
     
-    @IBAction func par3Switched(_ sender: Any) {
-        if(par3Switch.isOn){
+    @IBAction func parSwitched(_ sender: Any) {
+        var holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        if Int(holePar) == 3{
             fairwayLabel.textColor = UIColor.lightGray
             fairwaySwitch.isOn = false
             fairwaySwitch.isEnabled = false
@@ -119,7 +122,25 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
                 fairwayLabel.textColor = UIColor.black
             }
         }
+        
     }
+//    @IBAction func par3Switched(_ sender: Any) {
+//
+//        if(par3Switch.isOn){
+//            fairwayLabel.textColor = UIColor.lightGray
+//            fairwaySwitch.isOn = false
+//            fairwaySwitch.isEnabled = false
+//        }
+//        else {
+//            fairwaySwitch.isEnabled = true
+//            if(self.traitCollection.userInterfaceStyle == .dark) {
+//                fairwayLabel.textColor = UIColor.white
+//            }
+//            else{
+//                fairwayLabel.textColor = UIColor.black
+//            }
+//        }
+//    }
     
     @IBAction func finishRound(_ sender: Any) {
         var holeScore = 0.0
@@ -141,8 +162,12 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         let rowIdx = scorePicker.selectedRow(inComponent: 0)
         
         holeScore = (pickerData[rowIdx] as NSString).doubleValue
-
+        
         Variables.strokes = Variables.strokes + holeScore
+        
+        let holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        Variables.par = Variables.par + holePar
+        
         
 //        print(Realm.Configuration.defaultConfiguration.fileURL)
         try! realm.write {
@@ -154,6 +179,8 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
             round.strokes = Int(Variables.strokes)
             round.roundName = Variables.roundName
             round.totalFairways = Variables.totalFairways
+//            ADD IN PAR
+//            round.par = Int(Variables.par)
             realm.add(round)
 
             

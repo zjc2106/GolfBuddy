@@ -30,7 +30,7 @@ class FourthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scoreLabel.text = "\(Int(Variables.strokes))"
+        scoreLabel.text = "\(Int(Variables.strokes)) (\(Int(Variables.par)))"
         puttLabel.text = "\(Int(Variables.putts))"
         fairwayLabel.text = "\(Int(Variables.fairwaysHit))/\(Variables.totalFairways)"
         greenLabel.text =

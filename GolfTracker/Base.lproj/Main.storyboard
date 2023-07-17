@@ -74,20 +74,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ODH-1a-LmY">
-                                        <rect key="frame" x="40.5" y="66" width="118.5" height="31"/>
+                                        <rect key="frame" x="30.5" y="66" width="138.5" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par 3?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-Td-Je5">
-                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="31"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-Td-Je5">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-Cv-eqm">
-                                                <rect key="frame" x="69.5" y="0.0" width="51" height="31"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ipf-T9-SVm">
+                                                <rect key="frame" x="55.5" y="0.0" width="83" height="32"/>
+                                                <segments>
+                                                    <segment title="3"/>
+                                                    <segment title="4"/>
+                                                    <segment title="5"/>
+                                                </segments>
                                                 <connections>
-                                                    <action selector="par3Switched:" destination="kgX-Zf-veu" eventType="valueChanged" id="r6b-Lm-9iy"/>
+                                                    <action selector="parSwitched:" destination="kgX-Zf-veu" eventType="valueChanged" id="cl1-HX-z9h"/>
                                                 </connections>
-                                            </switch>
+                                            </segmentedControl>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yoa-Xf-9ft" userLabel="FairwayStack">
@@ -140,16 +145,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-5M-BZE" userLabel="ScoreStack">
-                                        <rect key="frame" x="17" y="290" width="165" height="100"/>
+                                        <rect key="frame" x="10.5" y="290" width="178.5" height="100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-EA-jpG">
-                                                <rect key="frame" x="0.0" y="0.0" width="54" height="100"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-EA-jpG">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="100"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cn2-Ku-TWr">
-                                                <rect key="frame" x="65" y="0.0" width="100" height="100"/>
+                                                <rect key="frame" x="78.5" y="0.0" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="llN-ov-kht"/>
                                                     <constraint firstAttribute="height" constant="100" id="zyj-9R-W8s"/>
@@ -193,7 +198,7 @@
                         <outlet property="girSwitch" destination="eas-Ff-Cmx" id="LRZ-yw-WWc"/>
                         <outlet property="holeLabel" destination="TwC-oI-BfB" id="PES-u4-44F"/>
                         <outlet property="nextHoleButton" destination="MrX-yq-iLv" id="PWC-Kj-aKO"/>
-                        <outlet property="par3Switch" destination="sj0-Cv-eqm" id="NjK-DQ-G1j"/>
+                        <outlet property="parSwitch" destination="Ipf-T9-SVm" id="G3K-yF-n9q"/>
                         <outlet property="puttSwitch" destination="U1r-fu-KOG" id="1dw-ky-Gb0"/>
                         <outlet property="scorePicker" destination="Cn2-Ku-TWr" id="NVD-3f-zVe"/>
                     </connections>
@@ -437,7 +442,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="rjn-ya-6av"/>
         <segue reference="fUh-7n-ah2"/>
-        <segue reference="zds-re-sqj"/>
+        <segue reference="LAz-KU-NCF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

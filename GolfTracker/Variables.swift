@@ -17,5 +17,6 @@ struct Variables {
     static var hole = 1
     static var roundName = ""
     static var totalFairways = 9
+    static var par = 0.0
     //static var realm = try! Realm()
 }

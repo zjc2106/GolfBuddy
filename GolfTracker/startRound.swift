@@ -29,6 +29,7 @@ class ThirdViewController: UIViewController {
         Variables.greensHit = 0.0
         Variables.strokes = 0.0
         Variables.hole = 1
+        Variables.par = 0.0
     }
     
 
