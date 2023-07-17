@@ -155,7 +155,8 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
             round.roundName = Variables.roundName
             round.totalFairways = Variables.totalFairways
             realm.add(round)
-            round.date = Date()
+
+            
             //round.totalFairways = Variables.
         }
     }

@@ -49,17 +49,16 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let roundList = realm.objects(Round.self)
         let cell = UITableViewCell()
-        let label = UILabel(frame: CGRect(x:0, y:0, width:400, height:50))
+        let label = UILabel(frame: CGRect(x:0, y:0, width:354, height:50))
         let testRoundName = roundList[roundCount].roundName ?? "<no-name>"
-        let testDate = roundList[roundCount].date
+        let roundDate = roundList[roundCount].date ?? Date.now
+        let roundHoles = roundList[roundCount].totalHoles
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let testDate = dateFormatter.string(from: roundDate)
         
         label.numberOfLines = 0
-        if testDate != nil{
-            label.text = "Round at \(testRoundName) on \(testDate!)"
-        }
-        else{
-            label.text = "Round at \(testRoundName) on unknown"
-        }
+        label.text = "\(roundHoles ?? 18) holes at \(testRoundName) on \(testDate)"
         cell.addSubview(label)
         roundCount = roundCount+1
         
