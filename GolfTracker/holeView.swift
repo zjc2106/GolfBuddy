@@ -42,6 +42,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         scorePicker.delegate = self
         scorePicker.dataSource = self
         finishRoundButton.isHidden = true
+        parSwitch.selectedSegmentIndex = 1
     }
     
     func numberOfComponents(in scorePicker: UIPickerView) -> Int {
@@ -59,7 +60,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBAction func nextHole(_ sender: Any) {
         var holeScore = 0.0
-        let holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         if(fairwaySwitch.isEnabled) {
             if(fairwaySwitch.isOn) {
                 Variables.fairwaysHit = Variables.fairwaysHit + 1
@@ -102,13 +103,15 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         }
         girSwitch.isOn = false
         puttSwitch.selectedSegmentIndex = 0
-        parSwitch.selectedSegmentIndex = 0
+        parSwitch.selectedSegmentIndex = 1
+        print(holePar)
+        print(Variables.par)
         
     }
     
     @IBAction func parSwitched(_ sender: Any) {
-        var holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
-        if Int(holePar) == 3{
+        var holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        if holePar == 3.0{
             fairwayLabel.textColor = UIColor.lightGray
             fairwaySwitch.isOn = false
             fairwaySwitch.isEnabled = false
@@ -165,9 +168,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
         Variables.strokes = Variables.strokes + holeScore
         
-        let holePar = (parSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         Variables.par = Variables.par + holePar
-        
+        print(holePar)
+        print(Variables.par)
         
 //        print(Realm.Configuration.defaultConfiguration.fileURL)
         try! realm.write {
