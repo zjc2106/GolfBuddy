@@ -37,6 +37,8 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var parSwitch: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+//        print(Variables.hole)
+        Variables.hole = 1
         holeLabel.text = "Hole \(Variables.hole)"
         // Do any additional setup after loading the view.
         scorePicker.delegate = self
@@ -84,7 +86,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         holeScore = (pickerData[rowIdx] as NSString).doubleValue
 
         Variables.strokes = Variables.strokes + holeScore
-        
+
         Variables.hole = Variables.hole + 1
         Variables.par = Variables.par + holePar
         holeLabel.text = "Hole \(Variables.hole)"

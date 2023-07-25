@@ -28,9 +28,11 @@ class FourthViewController: UIViewController {
     @IBOutlet weak var greenLabelNoChange: UILabel!
     
     
+    @IBOutlet weak var newRoundBut: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var toPar = Int(Variables.strokes)-Int(Variables.par)
+        let toPar = Int(Variables.strokes)-Int(Variables.par)
         
         if (toPar == 0){
             scoreLabel.text = "\(Int(Variables.strokes)) (E)"
@@ -49,7 +51,6 @@ class FourthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 

@@ -318,6 +318,7 @@
                         <outlet property="fairwayLabelNoChange" destination="2NI-Cc-Mfn" id="CC5-Fo-5DT"/>
                         <outlet property="greenLabel" destination="fEB-RQ-Wyy" id="pBP-bv-VhN"/>
                         <outlet property="greenLabelNoChange" destination="QS7-0C-8j8" id="Kbs-xa-XtB"/>
+                        <outlet property="newRoundBut" destination="nyU-LV-7J5" id="8uB-rc-kuW"/>
                         <outlet property="puttLabel" destination="3tV-8Z-fwN" id="rV9-xg-GK6"/>
                         <outlet property="puttLabelNoChange" destination="0aa-FB-Q5U" id="eXQ-Oz-FgJ"/>
                         <outlet property="roundLabel" destination="rhp-1S-y5p" id="bD3-bZ-aLV"/>
