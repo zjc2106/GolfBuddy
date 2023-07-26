@@ -34,6 +34,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBOutlet weak var nextHoleButton: UIButton!
     
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var parSwitch: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -196,7 +197,29 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
 
 
+    @IBAction func homePressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Woah!", message: "If you go home, you will lose this round's progreess.", preferredStyle: .alert)
+        
+        let stayAction = UIAlertAction(title: "Continue Round", style: .default) {
+            (action) in
+            print(action)
+        }
+        
+        let goAction = UIAlertAction(title: "Go Home", style: .default) {
+            (action) in
+            self.performSegue(withIdentifier: "roundToHome", sender: self)
+            
+            
+        }
+        
+        alert.addAction(stayAction)
+        alert.addAction(goAction)
+        present(alert, animated: true, completion: nil)
+        
+        
+    }
     
+
     /*
     // MARK: - Navigation
 

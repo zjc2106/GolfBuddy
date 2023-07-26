@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPq-sz-Wnl" userLabel="startButton">
-                                <rect key="frame" x="127.5" y="431" width="159.5" height="34.5"/>
+                                <rect key="frame" x="127.5" y="430.5" width="159" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Begin New Round"/>
                                 <connections>
@@ -26,13 +26,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golf Stat Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-Ba-Yq8">
-                                <rect key="frame" x="59" y="345" width="296" height="36"/>
+                                <rect key="frame" x="59" y="344.5" width="296" height="36"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmu-n8-xAF">
-                                <rect key="frame" x="111" y="515.5" width="192.5" height="34.5"/>
+                                <rect key="frame" x="110.5" y="515.5" width="193" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="View Previous Rounds"/>
                                 <connections>
@@ -51,10 +51,11 @@
                             <constraint firstItem="LJj-Ba-Yq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sOV-2L-WkA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="E4P-4f-eva"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
+            <point key="canvasLocation" x="3814" y="-1031"/>
         </scene>
         <!--holeView-->
         <scene sceneID="8g0-UI-DFy">
@@ -181,6 +182,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-Zv-ysc">
+                                <rect key="frame" x="23" y="48" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="kgX-Zf-veu" eventType="touchUpInside" id="IM2-Eu-gFJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uiO-wM-2XE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -197,15 +207,17 @@
                         <outlet property="finishRoundButton" destination="Zo6-ml-PjY" id="JVb-xg-ozg"/>
                         <outlet property="girSwitch" destination="eas-Ff-Cmx" id="LRZ-yw-WWc"/>
                         <outlet property="holeLabel" destination="TwC-oI-BfB" id="PES-u4-44F"/>
+                        <outlet property="homeButton" destination="Niv-Zv-ysc" id="9tH-fX-xa1"/>
                         <outlet property="nextHoleButton" destination="MrX-yq-iLv" id="PWC-Kj-aKO"/>
                         <outlet property="parSwitch" destination="Ipf-T9-SVm" id="G3K-yF-n9q"/>
                         <outlet property="puttSwitch" destination="U1r-fu-KOG" id="1dw-ky-Gb0"/>
                         <outlet property="scorePicker" destination="Cn2-Ku-TWr" id="NVD-3f-zVe"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="roundToHome" modalPresentationStyle="fullScreen" id="JTL-d5-BY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ko5-oL-lyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2846" y="25"/>
+            <point key="canvasLocation" x="2957" y="61"/>
         </scene>
         <!--roundStats-->
         <scene sceneID="Gap-CC-GXx">
@@ -305,6 +317,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rt-Gm-E3a">
+                                <rect key="frame" x="23" y="48" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Hwn-zq-fmC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q6t-QO-3Ra"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -358,6 +379,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMP-Bj-n2d">
+                                <rect key="frame" x="18" y="39" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="7S7-Xz-3rk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uzx-hs-hJ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -373,7 +403,6 @@
                     </view>
                     <connections>
                         <outlet property="roundTable" destination="p8Y-X2-g8D" id="hSc-w3-ddq"/>
-                        <segue destination="iDA-51-wg2" kind="presentation" identifier="roundSegue" modalPresentationStyle="fullScreen" id="zds-re-sqj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSz-An-VpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -422,6 +451,15 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="KUV-oL-8ZX"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9E-V7-uA5">
+                                <rect key="frame" x="23" y="48" width="70" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="CdV-SS-2az"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7A-yC-8P7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -441,9 +479,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rjn-ya-6av"/>
-        <segue reference="fUh-7n-ah2"/>
-        <segue reference="LAz-KU-NCF"/>
+        <segue reference="0or-eB-kUR"/>
+        <segue reference="Jce-Lf-2A2"/>
+        <segue reference="JTL-d5-BY7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
