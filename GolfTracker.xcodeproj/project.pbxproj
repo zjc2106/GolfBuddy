@@ -23,6 +23,7 @@
 		75AA00652896FAEF00DE9E6A /* GolfTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */; };
 		75AA00AC2898BA8500DE9E6A /* holeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00AB2898BA8500DE9E6A /* holeView.swift */; };
 		75BF61D928B1B11D003F4BC0 /* roundDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */; };
+		75D994802A7B57F700DBBD5C /* lifetimeStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9947F2A7B57F700DBBD5C /* lifetimeStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackerUITests.swift; sourceTree = "<group>"; };
 		75AA00AB2898BA8500DE9E6A /* holeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holeView.swift; sourceTree = "<group>"; };
 		75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundDatabase.swift; sourceTree = "<group>"; };
+		75D9947F2A7B57F700DBBD5C /* lifetimeStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifetimeStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				75AA00AB2898BA8500DE9E6A /* holeView.swift */,
 				75AA00432896FAEC00DE9E6A /* AppDelegate.swift */,
+				75D9947F2A7B57F700DBBD5C /* lifetimeStats.swift */,
 				75AA00452896FAEC00DE9E6A /* SceneDelegate.swift */,
 				75AA00472896FAEC00DE9E6A /* landingPage.swift */,
 				75AA00492896FAEC00DE9E6A /* Main.storyboard */,
@@ -286,6 +289,7 @@
 			files = (
 				75BF61D928B1B11D003F4BC0 /* roundDatabase.swift in Sources */,
 				75AA00AC2898BA8500DE9E6A /* holeView.swift in Sources */,
+				75D994802A7B57F700DBBD5C /* lifetimeStats.swift in Sources */,
 				75AA00482896FAEC00DE9E6A /* landingPage.swift in Sources */,
 				75AA00442896FAEC00DE9E6A /* AppDelegate.swift in Sources */,
 				755796C528A2FD21005EB659 /* roundStats.swift in Sources */,
