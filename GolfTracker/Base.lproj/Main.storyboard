@@ -39,6 +39,15 @@
                                     <segue destination="rh7-L5-T1e" kind="presentation" modalPresentationStyle="fullScreen" id="Jce-Lf-2A2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z8-Yt-2sL">
+                                <rect key="frame" x="170" y="597" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="hcv-vc-EcS" kind="presentation" modalPresentationStyle="fullScreen" id="5By-nK-sk4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -528,13 +537,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rM0-fn-KrQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="153.5" height="61.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVd-yr-RrY">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVd-yr-RrY">
                                                         <rect key="frame" x="51.5" y="0.0" width="51" height="41"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Avg. Fairways Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-SD-ys1">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg. Fairways Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-SD-ys1">
                                                         <rect key="frame" x="12.5" y="41" width="129" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -597,12 +606,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tad-SD-pLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5138" y="759"/>
+            <point key="canvasLocation" x="4999" y="-1069"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rjn-ya-6av"/>
-        <segue reference="fUh-7n-ah2"/>
+        <segue reference="0or-eB-kUR"/>
+        <segue reference="Jce-Lf-2A2"/>
         <segue reference="8zK-EI-EI8"/>
         <segue reference="Hwn-zq-fmC"/>
     </inferredMetricsTieBreakers>

@@ -173,9 +173,11 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
         let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         Variables.par = Variables.par + holePar
-        print(holePar)
         print(Variables.par)
-        
+        let roundDate =  Date.now
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let testDate = dateFormatter.string(from: roundDate)
 //        print(Realm.Configuration.defaultConfiguration.fileURL)
         try! realm.write {
             let round = Round()
@@ -187,8 +189,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
             round.roundName = Variables.roundName
             round.totalFairways = Variables.totalFairways
 //            ADD IN PAR
-//            round.par = Int(Variables.par)
+            round.date = testDate
+            round.par = Int(Variables.par)
             realm.add(round)
+            
 
             
             //round.totalFairways = Variables.

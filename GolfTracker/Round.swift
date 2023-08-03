@@ -16,6 +16,6 @@ class Round: Object {
     @Persisted var greensHit: Int?
     @Persisted var fairwaysHit: Int?
     @Persisted var totalFairways: Int?
-    @Persisted var date: Date?
-//    @Persisted var par: Int?
+    @Persisted var date: String?
+    @Persisted var par: Int?
 }

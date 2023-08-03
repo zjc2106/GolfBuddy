@@ -28,8 +28,6 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let roundList = realm.objects(Round.self)
-        print("number of rows")
-        print(roundList.count)
         return roundList.count
     }
     
@@ -43,6 +41,7 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
         Variables.putts = Double(selectedRound.putts ?? -1)
         Variables.totalHoles = selectedRound.totalHoles ?? -1
         Variables.fairwaysHit = Double(selectedRound.fairwaysHit ?? -1)
+        Variables.par = Double(selectedRound.par ?? -1)
         performSegue(withIdentifier: "roundSegue", sender: self)
     }
     
@@ -52,14 +51,11 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = UITableViewCell()
         let label = UILabel(frame: CGRect(x:0, y:0, width:354, height:50))
         let testRoundName = roundList[indexPath.row].roundName ?? "<no-name>"
-        let roundDate = roundList[indexPath.row].date ?? Date.now
+        let roundDate = roundList[indexPath.row].date ?? "old version"
         let roundHoles = roundList[indexPath.row].totalHoles
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
-        let testDate = dateFormatter.string(from: roundDate)
 
         label.numberOfLines = 0
-        label.text = "\(roundHoles ?? 18) holes at \(testRoundName) on \(testDate)"
+        label.text = "\(roundHoles ?? 18) holes at \(testRoundName) on \(roundDate)"
         cell.addSubview(label)
         return cell
     }
