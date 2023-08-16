@@ -113,7 +113,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     }
     
     @IBAction func parSwitched(_ sender: Any) {
-        var holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         if holePar == 3.0{
             fairwayLabel.textColor = UIColor.lightGray
             fairwaySwitch.isOn = false
@@ -200,7 +200,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     }
     
 
-
+    // Function if home is pressed, add an alert so that user doesn't automatically lose progress
     @IBAction func homePressed(_ sender: Any) {
         let alert = UIAlertController(title: "Woah!", message: "If you go home, you will lose this round's progreess.", preferredStyle: .alert)
         

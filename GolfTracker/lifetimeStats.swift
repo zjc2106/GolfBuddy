@@ -13,25 +13,53 @@ class lifetimeStats: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//         find all realm variables here. need handicap, total greens, total greens hit, total putts per hole, total fairways, total fairways hit
+
         var totalPutts = 0
         var totalHoles = 0
+        var fairsHit = 0
+        var totalFairways = 0
+        var greensHit = 0
+        var scoreList = [Int]()
         let roundList = realm.objects(Round.self)
+        
+        // aggregates all round stats
         for round in roundList{
-            totalPutts += round.putts ?? 0
-            totalHoles += round.totalHoles ?? 0
+            totalPutts += (round.putts ?? 0)
+            totalHoles += (round.totalHoles ?? 0)
+            fairsHit += (round.fairwaysHit ?? 0)
+            totalFairways += (round.totalFairways ?? 0)
+            greensHit += (round.greensHit ?? 0)
+            scoreList.append((round.strokes ?? 1000)-(round.par ?? 72))
         }
-        putts.text = "\(totalPutts/totalHoles)"
-        fairways.text = "\(totalPutts)"
-        handicap.text = "\(totalHoles)"
+        var avgPutts=Float(totalPutts)/Float(totalHoles)
+        var avgFairs=Float(fairsHit)/Float(totalFairways)*100
+        var avgGreens=Float(greensHit)/Float(totalHoles)*100
+        var fHandi = calcHandi(scoreList: scoreList)
+        // Converts string to one decimal
+        putts.text = String(format: "%.1f", avgPutts)
+        fairways.text = String(format: "%.1f", avgFairs) + "%"
+        greens.text = String(format: "%.1f", avgGreens) + "%"
+        handicap.text = String(format: "%.1f", fHandi)
     }
     
     @IBOutlet weak var handicap: UILabel!
     
-    @IBOutlet weak var putts: UILabel!
     @IBOutlet weak var fairways: UILabel!
+    @IBOutlet weak var putts: UILabel!
+
     @IBOutlet weak var greens: UILabel!
     
+    // function to calculate handicap
+    func calcHandi(scoreList: [Int]) -> Float {
+        let count = scoreList.count
+        if (count > 8) {
+            var newList = scoreList.sorted()[0...7]
+            return Float(newList.reduce(0, +))/Float(count)
+        }
+        else {
+            return Float(scoreList.reduce(0, +))/Float(count)
+        }
+    }
     
     /*
     // MARK: - Navigation
