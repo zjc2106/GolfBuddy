@@ -8,6 +8,23 @@
 import UIKit
 import RealmSwift
 
+extension UIColor {
+   convenience init(red: Int, green: Int, blue: Int) {
+       assert(red >= 0 && red <= 255, "Invalid red component")
+       assert(green >= 0 && green <= 255, "Invalid green component")
+       assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+   }
+
+   convenience init(rgb: Int) {
+       self.init(
+           red: (rgb >> 16) & 0xFF,
+           green: (rgb >> 8) & 0xFF,
+           blue: rgb & 0xFF
+       )
+   }
+}
 
 class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -99,10 +116,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         fairwaySwitch.isOn = false
         fairwaySwitch.isEnabled = true
         if(self.traitCollection.userInterfaceStyle == .dark) {
-            fairwayLabel.textColor = UIColor.white
+            fairwayLabel.textColor = UIColor(rgb: 0xCC9966)
         }
         else{
-            fairwayLabel.textColor = UIColor.black
+            fairwayLabel.textColor = UIColor(rgb: 0xCC9966)
         }
         girSwitch.isOn = false
         puttSwitch.selectedSegmentIndex = 0
@@ -122,10 +139,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         else {
             fairwaySwitch.isEnabled = true
             if(self.traitCollection.userInterfaceStyle == .dark) {
-                fairwayLabel.textColor = UIColor.white
+                fairwayLabel.textColor = UIColor(rgb: 0xCC9966)
             }
             else{
-                fairwayLabel.textColor = UIColor.black
+                fairwayLabel.textColor = UIColor(rgb: 0xCC9966)
             }
         }
         

@@ -47,24 +47,29 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let roundList = realm.objects(Round.self)
         let cell = UITableViewCell()
+        cell.contentView.backgroundColor = UIColor(rgb: 0x146736)
         let label = UILabel(frame: CGRect(x:0, y:0, width:354, height:50))
         let testRoundName = roundList[indexPath.row].roundName ?? "<no-name>"
         let roundDate = roundList[indexPath.row].date ?? "old version"
         let roundHoles = roundList[indexPath.row].totalHoles
 
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         label.text = "\(roundHoles ?? 18) holes at \(testRoundName) on \(roundDate)"
         cell.addSubview(label)
+        label.textColor = UIColor(rgb: 0xCC9966)
+        label.font = UIFont(name: "HiraginoSans-W3", size: 17)
+        label.adjustsFontSizeToFitWidth = true
         return cell
     }
 
     
     // UITableViewDelegate Functions
 
-    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     

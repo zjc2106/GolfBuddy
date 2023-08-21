@@ -15,8 +15,10 @@ class ThirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // set text color
+//        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+//        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
+        
     }
     
     @IBAction func startRound(_ sender: Any) {
