@@ -19,6 +19,8 @@ class ThirdViewController: UIViewController {
 //        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
 //        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
         
+        roundTextBox.adjustsFontSizeToFitWidth = true
+        
     }
     
     @IBAction func startRound(_ sender: Any) {

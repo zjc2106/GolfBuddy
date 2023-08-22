@@ -480,18 +480,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-X2-g8D">
-                                <rect key="frame" x="31" y="173" width="353" height="675"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-X2-g8D">
+                                <rect key="frame" x="15" y="173" width="384" height="675"/>
                                 <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Round" rowHeight="64" id="jlt-55-dam">
-                                        <rect key="frame" x="0.0" y="50" width="353" height="64"/>
+                                        <rect key="frame" x="0.0" y="50" width="384" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="nice" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jlt-55-dam" id="zWB-vg-c8h">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
@@ -525,11 +525,11 @@
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="top" secondItem="Uzx-hs-hJ7" secondAttribute="top" constant="125" id="FNR-Cr-wpo"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="top" secondItem="gtQ-R5-he9" secondAttribute="bottom" constant="38.5" id="LAO-Nc-Hzl"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="centerX" secondItem="TDh-Tr-pJG" secondAttribute="centerX" id="OSv-mT-JNp"/>
-                            <constraint firstItem="Uzx-hs-hJ7" firstAttribute="trailing" secondItem="p8Y-X2-g8D" secondAttribute="trailing" constant="30" id="YrZ-zD-QaA"/>
+                            <constraint firstItem="p8Y-X2-g8D" firstAttribute="leading" secondItem="Uzx-hs-hJ7" secondAttribute="leading" constant="15" id="cPu-ZX-ax9"/>
                             <constraint firstItem="XMP-Bj-n2d" firstAttribute="leading" secondItem="Uzx-hs-hJ7" secondAttribute="leading" constant="18" id="cc4-8F-cau"/>
                             <constraint firstItem="Uzx-hs-hJ7" firstAttribute="bottom" secondItem="p8Y-X2-g8D" secondAttribute="bottom" constant="14" id="ds8-R8-KoY"/>
-                            <constraint firstItem="p8Y-X2-g8D" firstAttribute="leading" secondItem="Uzx-hs-hJ7" secondAttribute="leading" constant="30" id="ewb-bW-b3Z"/>
                             <constraint firstItem="gtQ-R5-he9" firstAttribute="centerX" secondItem="TDh-Tr-pJG" secondAttribute="centerX" id="mL1-Oa-Udi"/>
+                            <constraint firstItem="Uzx-hs-hJ7" firstAttribute="trailing" secondItem="p8Y-X2-g8D" secondAttribute="trailing" constant="15" id="qPI-hu-B4t"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="top" secondItem="XMP-Bj-n2d" secondAttribute="bottom" constant="99" id="xDb-qI-4Na"/>
                         </constraints>
                     </view>
@@ -550,32 +550,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9E-V7-uA5">
-                                <rect key="frame" x="23" y="54" width="78" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home">
-                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
-                                    <color key="baseForegroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="CdV-SS-2az"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-SJ-6w7">
-                                <rect key="frame" x="107" y="243" width="200" height="255"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-SJ-6w7">
+                                <rect key="frame" x="107" y="295.5" width="200" height="305"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8H-sZ-RD9">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="c3q-xB-7z8"/>
+                                        </constraints>
                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="zzr-zP-qmS">
-                                        <rect key="frame" x="0.0" y="109" width="200" height="32"/>
+                                        <rect key="frame" x="0.0" y="134" width="200" height="32"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <segments>
                                             <segment title="9"/>
@@ -585,7 +575,7 @@
                                         <color key="selectedSegmentTintColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-wL-nBj">
-                                        <rect key="frame" x="0.0" y="215" width="200" height="40"/>
+                                        <rect key="frame" x="0.0" y="265" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wzb-dm-ddl"/>
                                         </constraints>
@@ -601,16 +591,34 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="KUV-oL-8ZX"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9E-V7-uA5">
+                                <rect key="frame" x="23" y="54" width="78" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                    <color key="baseForegroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="CdV-SS-2az"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WY-L6-vuD">
+                                <rect key="frame" x="69" y="150.5" width="276.5" height="45"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="45"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7A-yC-8P7"/>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="L4a-SJ-6w7" firstAttribute="centerY" secondItem="xAR-VV-ghc" secondAttribute="centerY" id="34O-88-wgz"/>
+                            <constraint firstItem="7WY-L6-vuD" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="9TL-EM-nf0"/>
                             <constraint firstItem="L4a-SJ-6w7" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="IGs-In-09r"/>
-                            <constraint firstItem="L4a-SJ-6w7" firstAttribute="top" secondItem="b7A-yC-8P7" secondAttribute="top" constant="80" id="IfM-nF-JzZ"/>
+                            <constraint firstItem="L4a-SJ-6w7" firstAttribute="top" secondItem="7WY-L6-vuD" secondAttribute="bottom" constant="100" id="rVH-P3-LXJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -787,11 +795,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xjk-OE-hGA"/>
-        <segue reference="utA-4P-bt8"/>
-        <segue reference="GwH-hx-8Hd"/>
+        <segue reference="5By-nK-sk4"/>
+        <segue reference="0or-eB-kUR"/>
+        <segue reference="Jce-Lf-2A2"/>
         <segue reference="8zK-EI-EI8"/>
-        <segue reference="WA2-jf-5y5"/>
+        <segue reference="CdV-SS-2az"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
