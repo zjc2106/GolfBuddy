@@ -67,7 +67,35 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     // UITableViewDelegate Functions
+    private func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
 
+//    private func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCell.EditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if (editingStyle == UITableViewCell.EditingStyle.delete) {
+//            let roundList = realm.objects(Round.self)
+//            try! realm.write {
+//                realm.delete(roundList[indexPath.row])
+//                tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .fade)
+//            }
+//        }
+//    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            let roundList = self.realm.objects(Round.self)
+            try! self.realm.write {
+                self.realm.delete(roundList[indexPath.row])
+                tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .fade)
+            }
+            completionHandler(true)
+        }
+
+
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [delete])
+        swipeActionConfig.performsFirstActionWithFullSwipe = false
+        return swipeActionConfig
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }

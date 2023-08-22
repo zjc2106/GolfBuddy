@@ -55,7 +55,6 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var parSwitch: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(Variables.hole)
         Variables.hole = 1
         holeLabel.text = "Hole \(Variables.hole)"
         // Do any additional setup after loading the view.
@@ -96,9 +95,6 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         let holePutts = (puttSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
         
         Variables.putts = Variables.putts + holePutts
-//        func pickerView(_ scorePicker: UIPickerView, didSelectRow row: Int, forComponent component: Int) -> String? {
-//            return pickerData[row]
-//        }
         let rowIdx = scorePicker.selectedRow(inComponent: 0)
         
         holeScore = (pickerData[rowIdx] as NSString).doubleValue
@@ -112,7 +108,6 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
             finishRoundButton.isHidden = false
             nextHoleButton.isHidden = true
         }
-//        par3Switch.isOn = false
         fairwaySwitch.isOn = false
         fairwaySwitch.isEnabled = true
         if(self.traitCollection.userInterfaceStyle == .dark) {
@@ -124,8 +119,6 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         girSwitch.isOn = false
         puttSwitch.selectedSegmentIndex = 0
         parSwitch.selectedSegmentIndex = 1
-        print(holePar)
-        print(Variables.par)
         
     }
     
@@ -147,23 +140,6 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         }
         
     }
-//    @IBAction func par3Switched(_ sender: Any) {
-//
-//        if(par3Switch.isOn){
-//            fairwayLabel.textColor = UIColor.lightGray
-//            fairwaySwitch.isOn = false
-//            fairwaySwitch.isEnabled = false
-//        }
-//        else {
-//            fairwaySwitch.isEnabled = true
-//            if(self.traitCollection.userInterfaceStyle == .dark) {
-//                fairwayLabel.textColor = UIColor.white
-//            }
-//            else{
-//                fairwayLabel.textColor = UIColor.black
-//            }
-//        }
-//    }
     
     @IBAction func finishRound(_ sender: Any) {
         var holeScore = 0.0
@@ -190,12 +166,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
         let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         Variables.par = Variables.par + holePar
-        print(Variables.par)
         let roundDate =  Date.now
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let testDate = dateFormatter.string(from: roundDate)
-//        print(Realm.Configuration.defaultConfiguration.fileURL)
         try! realm.write {
             let round = Round()
             round.fairwaysHit = Int(Variables.fairwaysHit)
