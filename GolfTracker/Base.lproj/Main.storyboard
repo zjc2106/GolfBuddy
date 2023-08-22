@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z8-Yt-2sL">
-                                <rect key="frame" x="118.5" y="608" width="177" height="40"/>
+                                <rect key="frame" x="118.66666666666669" y="608" width="177" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gkh-2i-8He"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golf Buddy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-Ba-Yq8">
-                                <rect key="frame" x="71.5" y="278" width="271" height="100"/>
+                                <rect key="frame" x="71.666666666666686" y="278" width="271" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="SFd-tf-9uh"/>
                                 </constraints>
@@ -100,25 +100,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-SP-oBs" userLabel="MainStack">
-                                <rect key="frame" x="105.5" y="191" width="203.5" height="514.5"/>
+                                <rect key="frame" x="105.33333333333333" y="191" width="203.33333333333337" height="514.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwC-oI-BfB">
-                                        <rect key="frame" x="41" y="0.0" width="121" height="35.5"/>
+                                        <rect key="frame" x="41.333333333333329" y="0.0" width="120.99999999999999" height="35.333333333333336"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="35"/>
                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ODH-1a-LmY">
-                                        <rect key="frame" x="36" y="60.5" width="131.5" height="31"/>
+                                        <rect key="frame" x="36.000000000000014" y="60.333333333333343" width="131.66666666666669" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-Td-Je5">
-                                                <rect key="frame" x="0.0" y="0.0" width="28.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="28.666666666666668" height="31"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ipf-T9-SVm">
-                                                <rect key="frame" x="48.5" y="0.0" width="83" height="32"/>
+                                                <rect key="frame" x="48.666666666666657" y="0.0" width="83" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <segments>
                                                     <segment title="3"/>
@@ -133,7 +133,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yoa-Xf-9ft" userLabel="FairwayStack">
-                                        <rect key="frame" x="53.5" y="116.5" width="96" height="31"/>
+                                        <rect key="frame" x="53.666666666666671" y="116.33333333333331" width="96.000000000000014" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbP-WY-0tu">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="31"/>
@@ -151,31 +151,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GPa-WL-L4l" userLabel="GIRStack">
-                                        <rect key="frame" x="52.5" y="172.5" width="98.5" height="31"/>
+                                        <rect key="frame" x="52.333333333333321" y="172.33333333333331" width="98.666666666666686" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHr-0b-HzC">
-                                                <rect key="frame" x="0.0" y="0.0" width="29.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="29.666666666666668" height="31"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eas-Ff-Cmx" userLabel="Gir Switch">
-                                                <rect key="frame" x="49.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="49.666666666666686" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-ta-77C" userLabel="PuttStack">
-                                        <rect key="frame" x="0.0" y="228.5" width="203.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="228.33333333333331" width="203.33333333333334" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Putts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD4-BC-myc">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="31"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U1r-fu-KOG" userLabel="Putt Switch">
-                                                <rect key="frame" x="64.5" y="0.0" width="139" height="32"/>
+                                                <rect key="frame" x="64.333333333333314" y="0.0" width="139" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <segments>
                                                     <segment title="0"/>
@@ -189,7 +189,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-5M-BZE" userLabel="ScoreStack">
-                                        <rect key="frame" x="13.5" y="284.5" width="176" height="100"/>
+                                        <rect key="frame" x="13.666666666666671" y="284.33333333333331" width="176" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-EA-jpG">
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="100"/>
@@ -213,7 +213,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrX-yq-iLv">
-                                        <rect key="frame" x="48.5" y="409.5" width="106.5" height="40"/>
+                                        <rect key="frame" x="48.333333333333321" y="409.33333333333337" width="106.66666666666669" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Da8-TI-SoU"/>
                                         </constraints>
@@ -228,7 +228,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-ml-PjY">
-                                        <rect key="frame" x="35" y="474.5" width="133.5" height="40"/>
+                                        <rect key="frame" x="35.000000000000014" y="474.33333333333337" width="133.33333333333337" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="v2d-2S-9i3"/>
                                         </constraints>
@@ -246,7 +246,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-Zv-ysc">
-                                <rect key="frame" x="23" y="48" width="77.5" height="31"/>
+                                <rect key="frame" x="23" y="54" width="77.666666666666671" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
@@ -262,8 +262,8 @@
                         <constraints>
                             <constraint firstItem="Brn-SP-oBs" firstAttribute="centerX" secondItem="BtC-nU-4S8" secondAttribute="centerX" id="8iN-tF-QxH"/>
                             <constraint firstItem="Brn-SP-oBs" firstAttribute="centerY" secondItem="BtC-nU-4S8" secondAttribute="centerY" id="NzK-De-nZa"/>
+                            <constraint firstItem="Niv-Zv-ysc" firstAttribute="top" secondItem="uiO-wM-2XE" secondAttribute="top" constant="10" id="O2N-xJ-Kvl"/>
                             <constraint firstItem="Niv-Zv-ysc" firstAttribute="leading" secondItem="uiO-wM-2XE" secondAttribute="leading" constant="23" id="rnm-gV-kz8"/>
-                            <constraint firstItem="Niv-Zv-ysc" firstAttribute="top" secondItem="uiO-wM-2XE" secondAttribute="top" id="yxk-NS-zOi"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ko5-oL-lyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="61"/>
+            <point key="canvasLocation" x="2956.4885496183206" y="60.563380281690144"/>
         </scene>
         <!--roundStats-->
         <scene sceneID="Gap-CC-GXx">
@@ -294,86 +294,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lds-wj-vtw">
-                                <rect key="frame" x="94.5" y="332" width="225" height="232.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-RD-NZa">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="57.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-v8-hT2">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="35.5"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
-                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes (To Par)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB2-7x-vuI">
-                                                <rect key="frame" x="0.0" y="40.5" width="225" height="17"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-bF-z3d">
-                                        <rect key="frame" x="0.0" y="87.5" width="225" height="57.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tV-8Z-fwN">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="35.5"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
-                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Putts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-FB-Q5U">
-                                                <rect key="frame" x="0.0" y="40.5" width="225" height="17"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-Mz-cL8">
-                                        <rect key="frame" x="0.0" y="175" width="225" height="57.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y4I-ff-pcp">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="57.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK4-ct-Evj">
-                                                        <rect key="frame" x="20" y="0.0" width="63" height="35.5"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
-                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairways Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NI-Cc-Mfn">
-                                                        <rect key="frame" x="0.0" y="40.5" width="102.5" height="17"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uWp-zK-9Gd">
-                                                <rect key="frame" x="122.5" y="0.0" width="102.5" height="57.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEB-RQ-Wyy">
-                                                        <rect key="frame" x="20" y="0.0" width="63" height="35.5"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
-                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greens Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS7-0C-8j8">
-                                                        <rect key="frame" x="6.5" y="40.5" width="89.5" height="17"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rt-Gm-E3a">
-                                <rect key="frame" x="23" y="48" width="77.5" height="31"/>
+                                <rect key="frame" x="23" y="54" width="77.666666666666671" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
@@ -384,75 +306,154 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhp-1S-y5p">
-                                <rect key="frame" x="57.5" y="177" width="299" height="45"/>
+                                <rect key="frame" x="57.666666666666657" y="135" width="299" height="45"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="45"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="cBu-yt-weY">
-                                <rect key="frame" x="114" y="654.5" width="186.5" height="170"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SlB-PT-ZS8">
+                                <rect key="frame" x="94.333333333333329" y="370" width="225.33333333333337" height="452"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyU-LV-7J5">
-                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="fq9-MT-nyB"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="New Round">
-                                            <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="B4W-Wx-M95" kind="presentation" modalPresentationStyle="fullScreen" id="rjn-ya-6av"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-aN-rfZ">
-                                        <rect key="frame" x="0.0" y="65" width="186.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="obl-yh-XXJ"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="View All Rounds">
-                                            <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="rh7-L5-T1e" kind="presentation" modalPresentationStyle="fullScreen" id="fUh-7n-ah2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-gk-BTO">
-                                        <rect key="frame" x="0.0" y="130" width="186.5" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Xsy-hq-ZQP"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="View Lifetime Stats">
-                                            <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="hcv-vc-EcS" kind="presentation" modalPresentationStyle="fullScreen" id="xjk-OE-hGA"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lds-wj-vtw">
+                                        <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="232"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-RD-NZa">
+                                                <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="57.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-v8-hT2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="35.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
+                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes (To Par)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB2-7x-vuI">
+                                                        <rect key="frame" x="0.0" y="40.333333333333314" width="225.33333333333334" height="17"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-bF-z3d">
+                                                <rect key="frame" x="0.0" y="87.333333333333314" width="225.33333333333334" height="57.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tV-8Z-fwN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="35.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
+                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Putts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-FB-Q5U">
+                                                        <rect key="frame" x="0.0" y="40.333333333333371" width="225.33333333333334" height="17"/>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                        <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-Mz-cL8">
+                                                <rect key="frame" x="0.0" y="174.66666666666663" width="225.33333333333334" height="57.333333333333343"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y4I-ff-pcp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="57.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK4-ct-Evj">
+                                                                <rect key="frame" x="19.999999999999996" y="0.0" width="62.666666666666657" height="35.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
+                                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairways Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NI-Cc-Mfn">
+                                                                <rect key="frame" x="0.0" y="40.333333333333371" width="102.66666666666667" height="17"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uWp-zK-9Gd">
+                                                        <rect key="frame" x="122.66666666666666" y="0.0" width="102.66666666666666" height="57.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEB-RQ-Wyy">
+                                                                <rect key="frame" x="19.999999999999996" y="0.0" width="62.666666666666657" height="35.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
+                                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greens Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS7-0C-8j8">
+                                                                <rect key="frame" x="6.6666666666666572" y="40.333333333333371" width="89.666666666666671" height="17"/>
+                                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="cBu-yt-weY">
+                                        <rect key="frame" x="0.0" y="282" width="225.33333333333334" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyU-LV-7J5">
+                                                <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="fq9-MT-nyB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="New Round">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="B4W-Wx-M95" kind="presentation" modalPresentationStyle="fullScreen" id="rjn-ya-6av"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-aN-rfZ">
+                                                <rect key="frame" x="0.0" y="65" width="225.33333333333334" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="obl-yh-XXJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="View All Rounds">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="rh7-L5-T1e" kind="presentation" modalPresentationStyle="fullScreen" id="fUh-7n-ah2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-gk-BTO">
+                                                <rect key="frame" x="0.0" y="130" width="225.33333333333334" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Xsy-hq-ZQP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="View Lifetime Stats">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="hcv-vc-EcS" kind="presentation" modalPresentationStyle="fullScreen" id="xjk-OE-hGA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q6t-QO-3Ra"/>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lds-wj-vtw" firstAttribute="centerY" secondItem="9Mg-VN-gWs" secondAttribute="centerY" id="0ao-8o-wYi"/>
-                            <constraint firstItem="cBu-yt-weY" firstAttribute="top" secondItem="lds-wj-vtw" secondAttribute="bottom" constant="90" id="16Q-7K-gq8"/>
-                            <constraint firstItem="lds-wj-vtw" firstAttribute="top" secondItem="rhp-1S-y5p" secondAttribute="bottom" constant="110" id="70B-Mb-ogp"/>
-                            <constraint firstItem="5rt-Gm-E3a" firstAttribute="top" secondItem="Q6t-QO-3Ra" secondAttribute="top" id="8UE-OU-blN"/>
-                            <constraint firstItem="lds-wj-vtw" firstAttribute="centerY" secondItem="9Mg-VN-gWs" secondAttribute="centerY" id="Aqs-3n-Ior"/>
-                            <constraint firstItem="lds-wj-vtw" firstAttribute="centerX" secondItem="9Mg-VN-gWs" secondAttribute="centerX" id="Brk-GX-Xdc"/>
-                            <constraint firstItem="lds-wj-vtw" firstAttribute="centerX" secondItem="9Mg-VN-gWs" secondAttribute="centerX" id="GYb-YA-OIp"/>
-                            <constraint firstItem="cBu-yt-weY" firstAttribute="centerX" secondItem="9Mg-VN-gWs" secondAttribute="centerX" id="exa-ev-V7P"/>
+                            <constraint firstItem="5rt-Gm-E3a" firstAttribute="top" secondItem="Q6t-QO-3Ra" secondAttribute="top" constant="10" id="GcO-Tc-xHJ"/>
+                            <constraint firstItem="Q6t-QO-3Ra" firstAttribute="bottom" secondItem="SlB-PT-ZS8" secondAttribute="bottom" constant="40" id="Xo9-2G-nyK"/>
+                            <constraint firstItem="rhp-1S-y5p" firstAttribute="top" secondItem="5rt-Gm-E3a" secondAttribute="bottom" constant="50" id="f6L-D4-WVg"/>
                             <constraint firstItem="rhp-1S-y5p" firstAttribute="centerX" secondItem="9Mg-VN-gWs" secondAttribute="centerX" id="i8M-Tm-0jJ"/>
                             <constraint firstItem="5rt-Gm-E3a" firstAttribute="leading" secondItem="Q6t-QO-3Ra" secondAttribute="leading" constant="23" id="ojr-iW-pHX"/>
+                            <constraint firstItem="SlB-PT-ZS8" firstAttribute="centerX" secondItem="9Mg-VN-gWs" secondAttribute="centerX" id="sPa-Ya-WwP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -481,7 +482,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-X2-g8D">
-                                <rect key="frame" x="15" y="173" width="384" height="675"/>
+                                <rect key="frame" x="15" y="169" width="384" height="679"/>
                                 <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -502,7 +503,7 @@
                                 <sections/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMP-Bj-n2d">
-                                <rect key="frame" x="18" y="43" width="77.5" height="31"/>
+                                <rect key="frame" x="18" y="10" width="77.666666666666671" height="60"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
@@ -513,7 +514,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime Rounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-R5-he9">
-                                <rect key="frame" x="31" y="94.5" width="352.5" height="40"/>
+                                <rect key="frame" x="30.666666666666657" y="90.666666666666671" width="353" height="40.000000000000014"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="40"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -524,6 +525,7 @@
                         <constraints>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="top" secondItem="Uzx-hs-hJ7" secondAttribute="top" constant="125" id="FNR-Cr-wpo"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="top" secondItem="gtQ-R5-he9" secondAttribute="bottom" constant="38.5" id="LAO-Nc-Hzl"/>
+                            <constraint firstItem="XMP-Bj-n2d" firstAttribute="top" secondItem="TDh-Tr-pJG" secondAttribute="top" constant="10" id="Nmq-zR-WUi"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="centerX" secondItem="TDh-Tr-pJG" secondAttribute="centerX" id="OSv-mT-JNp"/>
                             <constraint firstItem="p8Y-X2-g8D" firstAttribute="leading" secondItem="Uzx-hs-hJ7" secondAttribute="leading" constant="15" id="cPu-ZX-ax9"/>
                             <constraint firstItem="XMP-Bj-n2d" firstAttribute="leading" secondItem="Uzx-hs-hJ7" secondAttribute="leading" constant="18" id="cc4-8F-cau"/>
@@ -551,7 +553,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-SJ-6w7">
-                                <rect key="frame" x="107" y="295.5" width="200" height="305"/>
+                                <rect key="frame" x="107" y="431" width="200" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8H-sZ-RD9">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -564,37 +566,50 @@
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="zzr-zP-qmS">
-                                        <rect key="frame" x="0.0" y="134" width="200" height="32"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <segments>
-                                            <segment title="9"/>
-                                            <segment title="18"/>
-                                        </segments>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="selectedSegmentTintColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-wL-nBj">
-                                        <rect key="frame" x="0.0" y="265" width="200" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="wzb-dm-ddl"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Start Round">
-                                            <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                            <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="startRound:" destination="B4W-Wx-M95" eventType="touchUpInside" id="vRQ-VF-wTp"/>
-                                            <segue destination="kgX-Zf-veu" kind="presentation" identifier="toHoleScreen" modalPresentationStyle="fullScreen" id="fSM-4r-0g7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9E-V7-uA5">
-                                <rect key="frame" x="23" y="54" width="78" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WY-L6-vuD">
+                                <rect key="frame" x="69" y="281" width="276.33333333333331" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aS5-Dz-Pbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="45"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-wL-nBj">
+                                <rect key="frame" x="132" y="605" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="FRb-by-D1Z"/>
+                                    <constraint firstAttribute="height" constant="40" id="wzb-dm-ddl"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Round">
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startRound:" destination="B4W-Wx-M95" eventType="touchUpInside" id="vRQ-VF-wTp"/>
+                                    <segue destination="kgX-Zf-veu" kind="presentation" identifier="toHoleScreen" modalPresentationStyle="fullScreen" id="fSM-4r-0g7"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="zzr-zP-qmS">
+                                <rect key="frame" x="107" y="515" width="200" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JS7-Az-8GU"/>
+                                    <constraint firstAttribute="width" constant="200" id="wjH-Mb-0JB"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="9"/>
+                                    <segment title="18"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9E-V7-uA5">
+                                <rect key="frame" x="23" y="54" width="77.666666666666671" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home">
@@ -605,12 +620,6 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="CdV-SS-2az"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Round" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WY-L6-vuD">
-                                <rect key="frame" x="69" y="150.5" width="276.5" height="45"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="45"/>
-                                <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7A-yC-8P7"/>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.40525278100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -618,7 +627,13 @@
                             <constraint firstItem="L4a-SJ-6w7" firstAttribute="centerY" secondItem="xAR-VV-ghc" secondAttribute="centerY" id="34O-88-wgz"/>
                             <constraint firstItem="7WY-L6-vuD" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="9TL-EM-nf0"/>
                             <constraint firstItem="L4a-SJ-6w7" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="IGs-In-09r"/>
-                            <constraint firstItem="L4a-SJ-6w7" firstAttribute="top" secondItem="7WY-L6-vuD" secondAttribute="bottom" constant="100" id="rVH-P3-LXJ"/>
+                            <constraint firstItem="zzr-zP-qmS" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="KQh-mV-v6y"/>
+                            <constraint firstItem="hSp-wL-nBj" firstAttribute="centerX" secondItem="xAR-VV-ghc" secondAttribute="centerX" id="Prt-gO-G7C"/>
+                            <constraint firstItem="zzr-zP-qmS" firstAttribute="top" secondItem="L4a-SJ-6w7" secondAttribute="bottom" constant="50" id="Xk0-IS-SoV"/>
+                            <constraint firstItem="W9E-V7-uA5" firstAttribute="top" secondItem="b7A-yC-8P7" secondAttribute="top" constant="10" id="Ybl-kU-aaa"/>
+                            <constraint firstItem="W9E-V7-uA5" firstAttribute="leading" secondItem="b7A-yC-8P7" secondAttribute="leading" constant="23" id="cCb-5j-n7i"/>
+                            <constraint firstItem="L4a-SJ-6w7" firstAttribute="top" secondItem="7WY-L6-vuD" secondAttribute="bottom" constant="50" id="rVH-P3-LXJ"/>
+                            <constraint firstItem="hSp-wL-nBj" firstAttribute="top" secondItem="zzr-zP-qmS" secondAttribute="bottom" constant="50" id="ulb-ry-y55"/>
                         </constraints>
                     </view>
                     <connections>
@@ -628,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYL-5I-vjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="-308"/>
+            <point key="canvasLocation" x="1522.9007633587785" y="-308.45070422535213"/>
         </scene>
         <!--lifetimeStats-->
         <scene sceneID="Nq5-5L-GfB">
@@ -639,7 +654,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H73-jH-bRQ">
-                                <rect key="frame" x="23" y="48" width="77.5" height="31"/>
+                                <rect key="frame" x="23" y="54" width="77.666666666666671" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home">
                                     <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
@@ -650,13 +665,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVg-dS-gA3">
-                                <rect key="frame" x="37.5" y="167" width="339" height="45"/>
+                                <rect key="frame" x="37.666666666666657" y="135" width="338.66666666666674" height="45"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="45"/>
                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7Yz-VB-kVz">
-                                <rect key="frame" x="107" y="684.5" width="200" height="105"/>
+                                <rect key="frame" x="107" y="751" width="200" height="105"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwU-pd-FvH">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -690,19 +705,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZAR-eU-gCU">
-                                <rect key="frame" x="94.5" y="332" width="225" height="232.5"/>
+                                <rect key="frame" x="94.333333333333329" y="332" width="225.33333333333337" height="232"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-1C-9WH">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="57.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxs-Ed-yxG">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="35.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handicap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MU-fy-cAE">
-                                                <rect key="frame" x="0.0" y="40.5" width="225" height="17"/>
+                                                <rect key="frame" x="0.0" y="40.333333333333314" width="225.33333333333334" height="17"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -710,16 +725,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-Hb-JtV">
-                                        <rect key="frame" x="0.0" y="87.5" width="225" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="87.333333333333314" width="225.33333333333334" height="57.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyS-O2-ekb">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="35.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Putts/Hole" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-GA-ncg">
-                                                <rect key="frame" x="0.0" y="40.5" width="225" height="17"/>
+                                                <rect key="frame" x="0.0" y="40.333333333333371" width="225.33333333333334" height="17"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -727,19 +742,19 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2j6-na-hDm">
-                                        <rect key="frame" x="0.0" y="175" width="225" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="174.66666666666669" width="225.33333333333334" height="57.333333333333343"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rM0-fn-KrQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="57.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="57.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVd-yr-RrY">
-                                                        <rect key="frame" x="20" y="0.0" width="63" height="35.5"/>
+                                                        <rect key="frame" x="19.999999999999996" y="0.0" width="62.666666666666657" height="35.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairways Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-SD-ys1">
-                                                        <rect key="frame" x="0.0" y="40.5" width="102.5" height="17"/>
+                                                        <rect key="frame" x="0.0" y="40.333333333333314" width="102.66666666666667" height="17"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -747,16 +762,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ixx-CN-Esk">
-                                                <rect key="frame" x="122.5" y="0.0" width="102.5" height="57.5"/>
+                                                <rect key="frame" x="122.66666666666666" y="0.0" width="102.66666666666666" height="57.333333333333336"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDa-mM-Y27">
-                                                        <rect key="frame" x="20" y="0.0" width="63" height="35.5"/>
+                                                        <rect key="frame" x="19.999999999999996" y="0.0" width="62.666666666666657" height="35.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="35"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greens Hit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZh-WZ-JZk">
-                                                        <rect key="frame" x="6.5" y="40.5" width="89.5" height="17"/>
+                                                        <rect key="frame" x="6.6666666666666572" y="40.333333333333314" width="89.666666666666671" height="17"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                                         <color key="textColor" red="0.80000000000000004" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -775,11 +790,11 @@
                             <constraint firstItem="HVg-dS-gA3" firstAttribute="centerX" secondItem="Ap0-xb-wWb" secondAttribute="centerX" id="22f-Lx-cDy"/>
                             <constraint firstItem="H73-jH-bRQ" firstAttribute="leading" secondItem="wNG-bN-Koc" secondAttribute="leading" constant="23" id="Dna-uc-Tep"/>
                             <constraint firstItem="7Yz-VB-kVz" firstAttribute="centerX" secondItem="Ap0-xb-wWb" secondAttribute="centerX" id="Imn-yx-49C"/>
+                            <constraint firstItem="H73-jH-bRQ" firstAttribute="top" secondItem="wNG-bN-Koc" secondAttribute="top" constant="10" id="PRY-cH-Cdl"/>
                             <constraint firstItem="ZAR-eU-gCU" firstAttribute="centerX" secondItem="Ap0-xb-wWb" secondAttribute="centerX" id="Slg-Fk-TJL"/>
+                            <constraint firstItem="HVg-dS-gA3" firstAttribute="top" secondItem="H73-jH-bRQ" secondAttribute="bottom" constant="50" id="UBn-is-JLO"/>
                             <constraint firstItem="ZAR-eU-gCU" firstAttribute="centerY" secondItem="Ap0-xb-wWb" secondAttribute="centerY" id="XUg-Rm-SKm"/>
-                            <constraint firstItem="7Yz-VB-kVz" firstAttribute="top" secondItem="ZAR-eU-gCU" secondAttribute="bottom" constant="120" id="YNx-s8-HfZ"/>
-                            <constraint firstItem="ZAR-eU-gCU" firstAttribute="top" secondItem="HVg-dS-gA3" secondAttribute="bottom" constant="120" id="dSR-VW-88E"/>
-                            <constraint firstItem="H73-jH-bRQ" firstAttribute="top" secondItem="wNG-bN-Koc" secondAttribute="top" id="njW-Kj-zcc"/>
+                            <constraint firstAttribute="bottom" secondItem="7Yz-VB-kVz" secondAttribute="bottom" constant="40" id="w0l-gf-AEI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -795,11 +810,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5By-nK-sk4"/>
-        <segue reference="0or-eB-kUR"/>
-        <segue reference="Jce-Lf-2A2"/>
+        <segue reference="xjk-OE-hGA"/>
+        <segue reference="utA-4P-bt8"/>
+        <segue reference="GwH-hx-8Hd"/>
         <segue reference="8zK-EI-EI8"/>
-        <segue reference="CdV-SS-2az"/>
+        <segue reference="WA2-jf-5y5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
