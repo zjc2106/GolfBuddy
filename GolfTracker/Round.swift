@@ -8,6 +8,7 @@
 import Foundation
 import RealmSwift
 
+// Realm Round object
 class Round: Object {
     @Persisted var roundName: String?
     @Persisted var totalHoles: Int?

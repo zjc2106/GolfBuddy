@@ -10,30 +10,21 @@ import UIKit
 class FourthViewController: UIViewController {
 
     @IBOutlet weak var roundLabel: UILabel!
-    
     @IBOutlet weak var scoreLabel: UILabel!
-    
     @IBOutlet weak var scoreLabelNoChange: UILabel!
-    
     @IBOutlet weak var puttLabel: UILabel!
-    
     @IBOutlet weak var puttLabelNoChange: UILabel!
-    
     @IBOutlet weak var fairwayLabel: UILabel!
-    
     @IBOutlet weak var fairwayLabelNoChange: UILabel!
-    
     @IBOutlet weak var greenLabel: UILabel!
-    
     @IBOutlet weak var greenLabelNoChange: UILabel!
-    
-    
     @IBOutlet weak var newRoundBut: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let toPar = Int(Variables.strokes)-Int(Variables.par)
         
+        // set IBOutlets up
+        let toPar = Int(Variables.strokes)-Int(Variables.par)
         if (toPar == 0){
             scoreLabel.text = "\(Int(Variables.strokes)) (E)"
         }
@@ -47,18 +38,6 @@ class FourthViewController: UIViewController {
         fairwayLabel.text = "\(Int(Variables.fairwaysHit))/\(Variables.totalFairways)"
         greenLabel.text =
             "\(Int(Variables.greensHit))/\(Variables.totalHoles)"
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }

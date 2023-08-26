@@ -10,24 +10,18 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var holeNumButton: UISegmentedControl!
-    
     @IBOutlet weak var roundTextBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // set text color
-//        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
-//        holeNumButton.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
-        
         roundTextBox.adjustsFontSizeToFitWidth = true
-        
     }
     
     @IBAction func startRound(_ sender: Any) {
+        // set up variables
         Variables.totalHoles = (holeNumButton.titleForSegment(at: holeNumButton.selectedSegmentIndex)! as NSString).integerValue
         Variables.totalFairways = Variables.totalHoles
         Variables.roundName = roundTextBox.text ?? "<no-name>"
-        
         Variables.putts = 0.0
         Variables.fairwaysHit = 0.0
         Variables.greensHit = 0.0
@@ -35,16 +29,4 @@ class ThirdViewController: UIViewController {
         Variables.hole = 1
         Variables.par = 0.0
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

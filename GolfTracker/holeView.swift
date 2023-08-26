@@ -8,6 +8,8 @@
 import UIKit
 import RealmSwift
 
+
+// extension to allow rgb values in UIColor
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
        assert(red >= 0 && red <= 255, "Invalid red component")
@@ -28,36 +30,26 @@ extension UIColor {
 
 class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
 
+    // stroke values
     let pickerData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     
     let realm = try! Realm()
 
-    
     @IBOutlet weak var holeLabel: UILabel!
-    
     @IBOutlet weak var fairwayLabel: UILabel!
-    
-//    @IBOutlet weak var par3Switch: UISwitch!
-    
     @IBOutlet weak var fairwaySwitch: UISwitch!
-    
     @IBOutlet weak var girSwitch: UISwitch!
-    
     @IBOutlet weak var puttSwitch: UISegmentedControl!
-    
     @IBOutlet weak var scorePicker: UIPickerView!
-    
     @IBOutlet weak var finishRoundButton: UIButton!
-    
     @IBOutlet weak var nextHoleButton: UIButton!
-    
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var parSwitch: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Variables.hole = 1
         holeLabel.text = "Hole \(Variables.hole)"
-        // Do any additional setup after loading the view.
         scorePicker.delegate = self
         scorePicker.dataSource = self
         finishRoundButton.isHidden = true
@@ -79,7 +71,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
     
     @IBAction func nextHole(_ sender: Any) {
         var holeScore = 0.0
+        
+        // extract all values from buttons and switches
         let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        
         if(fairwaySwitch.isEnabled) {
             if(fairwaySwitch.isOn) {
                 Variables.fairwaysHit = Variables.fairwaysHit + 1
@@ -94,20 +89,24 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
         let holePutts = (puttSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
         
-        Variables.putts = Variables.putts + holePutts
         let rowIdx = scorePicker.selectedRow(inComponent: 0)
         
         holeScore = (pickerData[rowIdx] as NSString).doubleValue
 
+        // updates Variables (round aggregates)
         Variables.strokes = Variables.strokes + holeScore
-
+        Variables.putts = Variables.putts + holePutts
         Variables.hole = Variables.hole + 1
         Variables.par = Variables.par + holePar
+        
         holeLabel.text = "Hole \(Variables.hole)"
+        
+        // check if hole is last
         if(Variables.hole == Variables.totalHoles) {
             finishRoundButton.isHidden = false
             nextHoleButton.isHidden = true
         }
+        // reset all buttons to normal
         fairwaySwitch.isOn = false
         fairwaySwitch.isEnabled = true
         if(self.traitCollection.userInterfaceStyle == .dark) {
@@ -122,6 +121,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
     }
     
+    // grays fairway switch if par 3
     @IBAction func parSwitched(_ sender: Any) {
         let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
         if holePar == 3.0{
@@ -141,7 +141,9 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
     }
     
+    // adds data to database when round is finished
     @IBAction func finishRound(_ sender: Any) {
+        // gets all data from last hole
         var holeScore = 0.0
         if(fairwaySwitch.isEnabled) {
             if(fairwaySwitch.isOn) {
@@ -157,19 +159,22 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         
         let holePutts = (puttSwitch.titleForSegment(at: puttSwitch.selectedSegmentIndex)! as NSString).doubleValue
         
-        Variables.putts = Variables.putts + holePutts
         let rowIdx = scorePicker.selectedRow(inComponent: 0)
         
         holeScore = (pickerData[rowIdx] as NSString).doubleValue
-        
-        Variables.strokes = Variables.strokes + holeScore
-        
+
         let holePar = (parSwitch.titleForSegment(at: parSwitch.selectedSegmentIndex)! as NSString).doubleValue
+        
+        // updates variables to keep track
         Variables.par = Variables.par + holePar
+        Variables.strokes = Variables.strokes + holeScore
+        Variables.putts = Variables.putts + holePutts
+        
         let roundDate =  Date.now
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         let testDate = dateFormatter.string(from: roundDate)
+        // adds data to realm database
         try! realm.write {
             let round = Round()
             round.fairwaysHit = Int(Variables.fairwaysHit)
@@ -179,14 +184,9 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
             round.strokes = Int(Variables.strokes)
             round.roundName = Variables.roundName
             round.totalFairways = Variables.totalFairways
-//            ADD IN PAR
             round.date = testDate
             round.par = Int(Variables.par)
             realm.add(round)
-            
-
-            
-            //round.totalFairways = Variables.
         }
     }
     
@@ -203,26 +203,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource, UIPickerVie
         let goAction = UIAlertAction(title: "Go Home", style: .default) {
             (action) in
             self.performSegue(withIdentifier: "roundToHome", sender: self)
-            
-            
         }
         
         alert.addAction(stayAction)
         alert.addAction(goAction)
         present(alert, animated: true, completion: nil)
-        
-        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

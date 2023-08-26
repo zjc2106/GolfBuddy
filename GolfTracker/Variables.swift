@@ -8,6 +8,7 @@
 import Foundation
 import RealmSwift
 
+// local variables to be used in-round
 struct Variables {
     static var totalHoles = 9
     static var putts = 0.0
@@ -18,5 +19,4 @@ struct Variables {
     static var roundName = ""
     static var totalFairways = 9
     static var par = 0.0
-    //static var realm = try! Realm()
 }

@@ -13,24 +13,22 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var roundTable: UITableView!
     
     let realm = try! Realm()
-    //let roundList = realm.objects(Round.self)
     var roundCount = 0
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         roundTable.delegate = self
         roundTable.dataSource = self
-        
     }
     
+    // finds number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let roundList = realm.objects(Round.self)
         return roundList.count
     }
     
+    // gets info from database when row selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let roundList = realm.objects(Round.self)
         roundTable.deselectRow(at: indexPath, animated: true)
@@ -45,42 +43,34 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "roundSegue", sender: self)
     }
     
-    
+    // sets up cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let roundList = realm.objects(Round.self)
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         cell.contentView.backgroundColor = UIColor(rgb: 0x146736)
         let label = UILabel(frame: CGRect(x:0, y:0, width:354, height:50))
         let testRoundName = roundList[indexPath.row].roundName ?? "<no-name>"
         let roundDate = roundList[indexPath.row].date ?? "old version"
         let roundHoles = roundList[indexPath.row].totalHoles
-
+        
         label.numberOfLines = 1
         label.text = "\(roundHoles ?? 18) holes at \(testRoundName) on \(roundDate)"
         cell.addSubview(label)
         label.textColor = UIColor(rgb: 0xCC9966)
-        label.font = UIFont(name: "HiraginoSans-W3", size: 17)
+        label.font = UIFont(name: "HiraginoSans-W6", size: 17)
         label.adjustsFontSizeToFitWidth = true
         return cell
     }
-
     
-    // UITableViewDelegate Functions
+    
+    // allows delete
     private func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-
-//    private func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCell.EditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        if (editingStyle == UITableViewCell.EditingStyle.delete) {
-//            let roundList = realm.objects(Round.self)
-//            try! realm.write {
-//                realm.delete(roundList[indexPath.row])
-//                tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .fade)
-//            }
-//        }
-//    }
     
+    
+    // delete helper function
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
             let roundList = self.realm.objects(Round.self)
@@ -90,61 +80,15 @@ class FifthViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
             completionHandler(true)
         }
-
-
+        
+        
         let swipeActionConfig = UISwipeActionsConfiguration(actions: [delete])
         swipeActionConfig.performsFirstActionWithFullSwipe = false
         return swipeActionConfig
     }
+    
+    // height for each row-- automatic
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-     
-     
-     
-     class MyViewController:UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-             @IBOutlet var tableInfoQuake: UITableView!
-
-             override func viewDidLoad() {
-                 super.viewDidLoad()
-
-                 tableInfoQuake.datasource = self
-                 tableInfoQuake.delegate = self
-             }
-
-
-             // UITableViewDataSource Functions
-
-             func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                 return 7
-             }
-
-             func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell {
-                 let cell = UITableViewCell()
-                 let label = UILabel(CGRect(x:0, y:0, width:200, height:50))
-                 label.text = "Hello Man"
-                 cell.addSubview(label)
-                 return cell
-             }
-
-
-             // UITableViewDelegate Functions
-
-             func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-                 return 50
-             }
-         }
-    */
-
 }

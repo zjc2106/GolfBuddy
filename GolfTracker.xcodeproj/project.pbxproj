@@ -19,8 +19,6 @@
 		75AA004B2896FAEC00DE9E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA00492896FAEC00DE9E6A /* Main.storyboard */; };
 		75AA004D2896FAEE00DE9E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AA004C2896FAEE00DE9E6A /* Assets.xcassets */; };
 		75AA00502896FAEE00DE9E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AA004E2896FAEE00DE9E6A /* LaunchScreen.storyboard */; };
-		75AA005B2896FAEF00DE9E6A /* GolfTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA005A2896FAEF00DE9E6A /* GolfTrackerTests.swift */; };
-		75AA00652896FAEF00DE9E6A /* GolfTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */; };
 		75AA00AC2898BA8500DE9E6A /* holeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA00AB2898BA8500DE9E6A /* holeView.swift */; };
 		75BF61D928B1B11D003F4BC0 /* roundDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */; };
 		75D994802A7B57F700DBBD5C /* lifetimeStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9947F2A7B57F700DBBD5C /* lifetimeStats.swift */; };
@@ -57,9 +55,7 @@
 		75AA004F2896FAEE00DE9E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75AA00512896FAEE00DE9E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75AA00562896FAEF00DE9E6A /* GolfTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75AA005A2896FAEF00DE9E6A /* GolfTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackerTests.swift; sourceTree = "<group>"; };
 		75AA00602896FAEF00DE9E6A /* GolfTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfTrackerUITests.swift; sourceTree = "<group>"; };
 		75AA00AB2898BA8500DE9E6A /* holeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = holeView.swift; sourceTree = "<group>"; };
 		75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundDatabase.swift; sourceTree = "<group>"; };
 		75D9947F2A7B57F700DBBD5C /* lifetimeStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifetimeStats.swift; sourceTree = "<group>"; };
@@ -96,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				75AA00422896FAEC00DE9E6A /* GolfTracker */,
-				75AA00592896FAEF00DE9E6A /* GolfTrackerTests */,
-				75AA00632896FAEF00DE9E6A /* GolfTrackerUITests */,
 				75AA00412896FAEC00DE9E6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,22 +125,6 @@
 				75BF61D828B1B11D003F4BC0 /* roundDatabase.swift */,
 			);
 			path = GolfTracker;
-			sourceTree = "<group>";
-		};
-		75AA00592896FAEF00DE9E6A /* GolfTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				75AA005A2896FAEF00DE9E6A /* GolfTrackerTests.swift */,
-			);
-			path = GolfTrackerTests;
-			sourceTree = "<group>";
-		};
-		75AA00632896FAEF00DE9E6A /* GolfTrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				75AA00642896FAEF00DE9E6A /* GolfTrackerUITests.swift */,
-			);
-			path = GolfTrackerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75AA005B2896FAEF00DE9E6A /* GolfTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75AA00652896FAEF00DE9E6A /* GolfTrackerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
