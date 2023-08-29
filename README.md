@@ -31,7 +31,7 @@ Download the app here
 
 ## Privacy Policy
 
-For App Users- [Privacy Policy](golfbuddyprivacy.pdf)
+For App Users- [Privacy Policy](GolfBuddyPrivacy.pdf)
 
 
 
