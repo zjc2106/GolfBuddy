@@ -12,6 +12,8 @@ Golf Buddy compiles these statistics for each round, creating a comprehensive da
 - All data is stored locally on the user's device
 - Designed with ease of use in mind so that focus stays on user's play; no signup or internet connection required
 
+Have an idea for a feature? Email me at golfbuddystats@gmail.com
+
 ## Download
 
 Download the app here
@@ -32,6 +34,10 @@ Download the app here
 ## Privacy Policy
 
 For App Users- [Privacy Policy](GolfBuddyPrivacy.pdf)
+
+## Contact
+
+Any app issues, general feedback, or feature enhancement requests? Email me at golfbuddystats@gmail.com!
 
 
 
