@@ -12,18 +12,15 @@ Golf Buddy compiles these statistics for each round, creating a comprehensive da
 - All data is stored locally on the user's device
 - Designed with ease of use in mind so that focus stays on user's play; no signup or internet connection required
 
-Have an idea for a feature? Email me at golfbuddystats@gmail.com
+## Access
 
-## Download
-
-Download the app here
+Want beta access? Shoot me an email at golfbuddystats@gmail.com!
 
 ## Usage
 
-1. Download the app from the app store
-2. Launch the app and start a new round.
-3. Input statistics for each hole, including FIR, GIR, putts, and score.
-4. View your round statistics or lifetime stats in the app.
+1. Launch the app and start a new round.
+2. Input statistics for each hole, including FIR, GIR, putts, and score.
+3. View your round statistics or lifetime stats in the app.
 
 ## Technologies Used
 
