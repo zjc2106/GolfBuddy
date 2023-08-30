@@ -7,14 +7,25 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var holeNumButton: UISegmentedControl!
     @IBOutlet weak var roundTextBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         roundTextBox.adjustsFontSizeToFitWidth = true
+        roundTextBox.delegate = self
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            view.endEditing(true)
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func startRound(_ sender: Any) {
