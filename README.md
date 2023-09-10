@@ -14,7 +14,7 @@ Golf Buddy compiles these statistics for each round, creating a comprehensive da
 
 ## Access
 
-Want beta access? Shoot me an email at golfbuddystats@gmail.com!
+Access Golf Buddy through the Apple App Store- [Golf Buddy](https://apps.apple.com/us/app/golf-buddy-stat-tracker/id6463694116)
 
 ## Usage
 
